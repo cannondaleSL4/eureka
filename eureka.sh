@@ -7,4 +7,4 @@ cd "$(dirname "$0")"
 mvn clean install
 
 chmod +x ./target/fxquotes.eureka-1.0-SNAPSHOT.jar
-java -jar ./target/*.jar
+java -Xms256m -Xmx512m -XX:+UseSerialGC -jar ./target/*.jar
