@@ -18,11 +18,11 @@ chmod +x ../identity/target/fxquotes.identity-1.0-SNAPSHOT.jar
 chmod +x ../request/target/fxquotes.request-1.0-SNAPSHOT.jar
 chmod +x ../persist/target/fxquotes.persist-1.0-SNAPSHOT.jar
 
-nohup java -Xms256m -Xmx512m -XX:+UseSerialGC -jar ./target/*.jar &
-nohup java -Xms256m -Xmx512m -XX:+UseSerialGC -jar ../gateway/target/*.jar &
-nohup java -Xms256m -Xmx512m -XX:+UseSerialGC -jar ../identity/target/*.jar &
-nohup java -Xms256m -Xmx512m -XX:+UseSerialGC -jar ../request/target/*.jar &
-nohup java -Xms256m -Xmx512m -XX:+UseSerialGC -jar ../persist/target/*.jar &
+nohup java -Xms256m -Xmx328m -XX:+UseSerialGC -jar ./target/*.jar &
+nohup java -Xms256m -Xmx328m -XX:+UseSerialGC -jar ../gateway/target/*.jar &
+nohup java -Xms256m -Xmx328m -XX:+UseSerialGC -jar ../identity/target/*.jar &
+nohup java -Xms256m -Xmx328m -XX:+UseSerialGC -jar ../request/target/*.jar &
+nohup java -Xms256m -Xmx328m -XX:+UseSerialGC -jar ../persist/target/*.jar &
 
 #run angular
 cd ../front/
